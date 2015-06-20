@@ -275,6 +275,7 @@ This will create a file example6.txt.asc which contains the ciphertext. Open it 
 ##### For the advanced/paranoid #####
 * [PGP Best Practices](https://help.riseup.net/en/security/message-security/openpgp/best-practices)
 * [Secure GnuPG configuration](https://sparkslinux.wordpress.com/2013/07/09/secure-gnupg-configuration/)
+* [Coursera course Cryptography I](https://www.coursera.org/course/crypto)
 
 ##### Digital privacy #####
 * [Bits of Freedom](https://www.bof.nl/)
@@ -283,6 +284,7 @@ This will create a file example6.txt.asc which contains the ciphertext. Open it 
 
 ##### Operational security #####
 * [Password strength](https://blogs.dropbox.com/tech/2012/04/zxcvbn-realistic-password-strength-estimation/)
+* [VPN service](https://www.privateinternetaccess.com/)
 
 #### Attribution ####
 * "<a href="https://commons.wikimedia.org/wiki/File:Symmetric_key_encryption.svg#/media/File:Symmetric_key_encryption.svg">Symmetric key encryption</a>" by <a href="https://commons.wikimedia.org/w/index.php?title=User:Phayzfaustyn&amp;action=edit&amp;redlink=1" class="new" title="User:Phayzfaustyn (page does not exist)">Phayzfaustyn</a> - <span class="int-own-work" lang="en">Own work</span>. Licensed under <a href="http://creativecommons.org/publicdomain/zero/1.0/deed.en" title="Creative Commons Zero, Public Domain Dedication">CC0</a> via <a href="https://commons.wikimedia.org/wiki/">Wikimedia Commons</a>.
