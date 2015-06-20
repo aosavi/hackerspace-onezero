@@ -247,6 +247,8 @@ This will create a file example6.txt.asc which contains the ciphertext. Open it 
 
 ##### Example 11 - Generating a revocation certificate #####
 
+##### Example 12 - Working with a smartcard or Yubikey #####
+
 [1]: https://www.gnupg.org
 [2]: https://en.wikipedia.org/wiki/Pretty_Good_Privacy#OpenPGP
 [3]: https://www.schneier.com/crypto-gram/archives/1999/0215.html#snakeoil
@@ -280,6 +282,7 @@ This will create a file example6.txt.asc which contains the ciphertext. Open it 
 * [PGP Best Practices](https://help.riseup.net/en/security/message-security/openpgp/best-practices)
 * [Secure GnuPG configuration](https://sparkslinux.wordpress.com/2013/07/09/secure-gnupg-configuration/)
 * [Coursera course Cryptography I](https://www.coursera.org/course/crypto)
+* [Yubikey](https://www.yubikey.com)
 
 ##### Digital privacy #####
 * [Bits of Freedom](https://www.bof.nl/)
