@@ -233,19 +233,19 @@ This will create a file example6.txt.asc which contains the ciphertext. Open it 
 
 #### Key verification and key signing (certification) ####
 
-##### Example 6 - Verifying and signing the PGP key of someone else #####
+##### Example 7 - Verifying and signing the PGP key of someone else #####
 
-##### Example 7 - Verifying, signing and exchanging each other's keys #####
+##### Example 8 - Verifying, signing and exchanging each other's keys #####
 
 ### Message integrity (optional) ###
 
-##### Example 8 - Encrypting and signing a message #####
+##### Example 9 - Encrypting and signing a message #####
 
-##### Example 9 - Decrypting and verifying a message #####
+##### Example 10 - Decrypting and verifying a message #####
 
 ### Extras (optional) ###
 
-##### Example 10 - Generating a revocation certificate #####
+##### Example 11 - Generating a revocation certificate #####
 
 [1]: https://www.gnupg.org
 [2]: https://en.wikipedia.org/wiki/Pretty_Good_Privacy#OpenPGP
