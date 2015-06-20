@@ -9,7 +9,7 @@ Let's list our public keys here with their fingerprints so we can easily verify 
 | Bobby     | 0xA8EF0D105A6B8EA7    |  DF56 788F D184 C4A8 3F87<br> 1896 A8EF 0D10 5A6B 8EA7 |
 | Can       |                       |                               |
 | Daan      |                       |                               |
-| David     |                       |                               |
+| David     |0x80B5712A6FA7ACCD                    |0FC2 F843 CBEE 26F2 3382 <br> 45D7 80B5 712A 6FA7 ACCD|
 | Emile     |                       |                               |
 | Luuk      |                       |                               |
 | Sam       |                       |                               |
