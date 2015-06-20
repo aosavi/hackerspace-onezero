@@ -162,6 +162,7 @@ We basically have two options to export our public key:
 1. To a file
 2. To a keyserver
 In this example, we are going to use a keyserver to export our key to. First, we have to find the ID of the key we want to export
+
 ```$ gpg2 --list-keys bartgenuit```
 ```
 pub   4096R/0x1B3940341CE0C685 2014-09-18 [expires: 2015-09-18]
@@ -171,6 +172,7 @@ sub   4096R/0x7EE003C875AF686F 2014-09-18 [expires: 2015-09-18]
 sub   4096R/0xD862E7132CB59274 2014-09-18 [expires: 2015-09-18]
 ```
 The key set is identified by the main key ID, in this case, "0x1B3940341CE0C685". So, we go ahead and export this key to the standard keyserver in our configuration.
+
 ```$  gpg2 --send-keys 0x1B3940341CE0C685```
 ```
 gpg: sending key 0x1B3940341CE0C685 to hkps server hkps.pool.sks-keyservers.net
