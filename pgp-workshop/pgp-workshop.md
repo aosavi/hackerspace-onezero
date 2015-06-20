@@ -159,8 +159,10 @@ A key pair should now be generated (this might take a few minutes), consisting b
 
 ##### Example 3 - Exporting your public key #####
 We basically have two options to export our public key:
+
 1. To a file
 2. To a keyserver
+
 In this example, we are going to use a keyserver to export our key to. First, we have to find the ID of the key we want to export
 
 ```$ gpg2 --list-keys bartgenuit```
@@ -201,8 +203,10 @@ I will leave a personal message for each of you in the GitHub repo, encrypted to
 
 ##### Example 5 - Importing public keys #####
 Same two options:
+
 1. From a file
 2. From a keyserver
+
 In this example, we are going to use a keyserver to lookup the key we need. In a day-to-day setting, you would often not yet have the key of the person you want to send to. So, we first try to search for the key using their name or e-mail address:
 
 ```$ gpg2 --search-keys alice@wonderland.com```
@@ -217,7 +221,7 @@ This is why later on we are going to verify and certify the key that we obtained
 ##### Example 6 - Encrypting a message #####
 Once we have someone's public key, we can encrypt a message to them. Go ahead and write a message, saving it as example6.txt. Next, we are going to encrypt that message to the public key we obtained:
 
-```$gpg2 --armor --encrypt example6.txt --recipient 0x1B3940341CE0C685```
+```$ gpg2 --armor --encrypt example6.txt --recipient 0x1B3940341CE0C685```
 
 This will create a file example6.txt.asc which contains the ciphertext. Open it to see what it looks like. Now, you can e-mail this file to the recipient, put it on our GitHub repo, or transfer it to them in any other way.
 
