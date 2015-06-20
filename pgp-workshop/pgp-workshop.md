@@ -286,6 +286,7 @@ This will create a file example6.txt.asc which contains the ciphertext. Open it 
 * [Secure GnuPG configuration](https://sparkslinux.wordpress.com/2013/07/09/secure-gnupg-configuration/)
 * [Coursera course Cryptography I](https://www.coursera.org/course/crypto)
 * [Yubikey](https://www.yubikey.com)
+* [KeePass][7]
 
 ##### Digital privacy #####
 * [Bits of Freedom](https://www.bof.nl/)
