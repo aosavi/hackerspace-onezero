@@ -177,7 +177,7 @@ The key set is identified by the main key ID, in this case, "0x1B3940341CE0C685"
 ```
 gpg: sending key 0x1B3940341CE0C685 to hkps server hkps.pool.sks-keyservers.net
 ```
-And that's it, our public key is now sent to the keyserver and will be published to other keyservers, so everyone will be able to find it (for example by searching for our e-mail address). Just to be sure, we are going to put our main key IDs in a [central public key list](../blob/master/pgp-workshop/publickeys.md) on GitHub.
+And that's it, our public key is now sent to the keyserver and will be published to other keyservers, so everyone will be able to find it (for example by searching for our e-mail address). Just to be sure, we are going to put our main key IDs in a [central public key list](../pgp-workshop/publickeys.md) on GitHub.
 
 ### The PGP Encryption system ###
 ![PGP Diagram](https://upload.wikimedia.org/wikipedia/commons/2/2a/Wat_is_PGP_%28Pretty_Good_Privacy%29%3F.png)
