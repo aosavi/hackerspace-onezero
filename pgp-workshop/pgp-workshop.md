@@ -67,7 +67,7 @@ How was Enigma broken back in the days?
 * Problem: how to send the secret key?
 
 ##### Example 1 - Symmetric encryption #####
-First, either download 'example1.txt' from the [repository](../blob/master/pgp-workshop/example1.txt), or create your own example1.txt with some arbitrary message. This will be the plaintext message we want to encrypt. Now, while in the same directory as our plaintext message, we encrypt using symmetric encryption:
+First, either download 'example1.txt' from the [repository](../pgp-workshop/example1.txt), or create your own example1.txt with some arbitrary message. This will be the plaintext message we want to encrypt. Now, while in the same directory as our plaintext message, we encrypt using symmetric encryption:
 
 ```$ gpg2 --armor --symmetric example1.txt```
 
