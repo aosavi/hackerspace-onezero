@@ -263,6 +263,7 @@ This will create a file example6.txt.asc which contains the ciphertext. Open it 
 [GNU Privacy Guard][1] (GnuPG) is an open source and free implementation of the [OpenPGP][2] standard. It can be used to encrypt texts, e-mails, files, directories, and whole disk partitions. It is a widely used, powerful and basic tool and it will be used as the main program in this workshop to explain the basics of encryption in practice.
 
 * Windows:
+ * `choco install gpg4win`, or
  * http://www.gpg4win.org/
 
 * Mac:
