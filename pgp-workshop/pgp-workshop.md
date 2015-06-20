@@ -249,6 +249,8 @@ This will create a file example6.txt.asc which contains the ciphertext. Open it 
 
 ##### Example 12 - Working with a smartcard or Yubikey #####
 
+##### Example 13 - Setting the default encryption key to use in the configuration #####
+
 [1]: https://www.gnupg.org
 [2]: https://en.wikipedia.org/wiki/Pretty_Good_Privacy#OpenPGP
 [3]: https://www.schneier.com/crypto-gram/archives/1999/0215.html#snakeoil
