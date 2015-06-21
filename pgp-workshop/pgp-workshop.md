@@ -285,7 +285,7 @@ This will create a file example6.txt.asc which contains the ciphertext. Open it 
 * [PGP Best Practices](https://help.riseup.net/en/security/message-security/openpgp/best-practices)
 * [Secure GnuPG configuration](https://sparkslinux.wordpress.com/2013/07/09/secure-gnupg-configuration/)
 * [Coursera course Cryptography I](https://www.coursera.org/course/crypto)
-* [Yubikey](https://www.yubikey.com)
+* [Yubikey](https://www.yubico.com)
 * [KeePass][7]
 
 ##### Digital privacy #####
