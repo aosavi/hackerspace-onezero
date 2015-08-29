@@ -67,7 +67,7 @@ How was Enigma broken back in the days?
 * Problem: how to send the secret key?
 
 ##### Example 1 - Symmetric encryption #####
-First, either download 'example1.txt' from the [repository](../blob/master/pgp-workshop/example1.txt), or create your own example1.txt with some arbitrary message. This will be the plaintext message we want to encrypt. Now, while in the same directory as our plaintext message, we encrypt using symmetric encryption:
+First, either download 'example1.txt' from the [repository](../pgp-workshop/example1.txt), or create your own example1.txt with some arbitrary message. This will be the plaintext message we want to encrypt. Now, while in the same directory as our plaintext message, we encrypt using symmetric encryption:
 
 ```$ gpg2 --armor --symmetric example1.txt```
 
@@ -159,8 +159,10 @@ A key pair should now be generated (this might take a few minutes), consisting b
 
 ##### Example 3 - Exporting your public key #####
 We basically have two options to export our public key:
+
 1. To a file
 2. To a keyserver
+
 In this example, we are going to use a keyserver to export our key to. First, we have to find the ID of the key we want to export
 
 ```$ gpg2 --list-keys bartgenuit```
@@ -201,8 +203,10 @@ I will leave a personal message for each of you in the GitHub repo, encrypted to
 
 ##### Example 5 - Importing public keys #####
 Same two options:
+
 1. From a file
 2. From a keyserver
+
 In this example, we are going to use a keyserver to lookup the key we need. In a day-to-day setting, you would often not yet have the key of the person you want to send to. So, we first try to search for the key using their name or e-mail address:
 
 ```$ gpg2 --search-keys alice@wonderland.com```
@@ -217,7 +221,7 @@ This is why later on we are going to verify and certify the key that we obtained
 ##### Example 6 - Encrypting a message #####
 Once we have someone's public key, we can encrypt a message to them. Go ahead and write a message, saving it as example6.txt. Next, we are going to encrypt that message to the public key we obtained:
 
-```$gpg2 --armor --encrypt example6.txt --recipient 0x1B3940341CE0C685```
+```$ gpg2 --armor --encrypt example6.txt --recipient 0x1B3940341CE0C685```
 
 This will create a file example6.txt.asc which contains the ciphertext. Open it to see what it looks like. Now, you can e-mail this file to the recipient, put it on our GitHub repo, or transfer it to them in any other way.
 
@@ -229,19 +233,23 @@ This will create a file example6.txt.asc which contains the ciphertext. Open it 
 
 #### Key verification and key signing (certification) ####
 
-##### Example 6 - Verifying and signing the PGP key of someone else #####
+##### Example 7 - Verifying and signing the PGP key of someone else #####
 
-##### Example 7 - Verifying, signing and exchanging each other's keys #####
+##### Example 8 - Verifying, signing and exchanging each other's keys #####
 
 ### Message integrity (optional) ###
 
-##### Example 8 - Encrypting and signing a message #####
+##### Example 9 - Encrypting and signing a message #####
 
-##### Example 9 - Decrypting and verifying a message #####
+##### Example 10 - Decrypting and verifying a message #####
 
 ### Extras (optional) ###
 
-##### Example 10 - Generating a revocation certificate #####
+##### Example 11 - Generating a revocation certificate #####
+
+##### Example 12 - Working with a smartcard or Yubikey #####
+
+##### Example 13 - Setting the default encryption key to use in the configuration #####
 
 [1]: https://www.gnupg.org
 [2]: https://en.wikipedia.org/wiki/Pretty_Good_Privacy#OpenPGP
@@ -257,6 +265,7 @@ This will create a file example6.txt.asc which contains the ciphertext. Open it 
 [GNU Privacy Guard][1] (GnuPG) is an open source and free implementation of the [OpenPGP][2] standard. It can be used to encrypt texts, e-mails, files, directories, and whole disk partitions. It is a widely used, powerful and basic tool and it will be used as the main program in this workshop to explain the basics of encryption in practice.
 
 * Windows:
+ * `choco install gpg4win`, or
  * http://www.gpg4win.org/
 
 * Mac:
@@ -275,6 +284,9 @@ This will create a file example6.txt.asc which contains the ciphertext. Open it 
 ##### For the advanced/paranoid #####
 * [PGP Best Practices](https://help.riseup.net/en/security/message-security/openpgp/best-practices)
 * [Secure GnuPG configuration](https://sparkslinux.wordpress.com/2013/07/09/secure-gnupg-configuration/)
+* [Coursera course Cryptography I](https://www.coursera.org/course/crypto)
+* [Yubikey](https://www.yubico.com/products/yubikey-hardware/)
+* [KeePass][7]
 
 ##### Digital privacy #####
 * [Bits of Freedom](https://www.bof.nl/)
@@ -283,6 +295,7 @@ This will create a file example6.txt.asc which contains the ciphertext. Open it 
 
 ##### Operational security #####
 * [Password strength](https://blogs.dropbox.com/tech/2012/04/zxcvbn-realistic-password-strength-estimation/)
+* [VPN service](https://www.privateinternetaccess.com/)
 
 #### Attribution ####
 * "<a href="https://commons.wikimedia.org/wiki/File:Symmetric_key_encryption.svg#/media/File:Symmetric_key_encryption.svg">Symmetric key encryption</a>" by <a href="https://commons.wikimedia.org/w/index.php?title=User:Phayzfaustyn&amp;action=edit&amp;redlink=1" class="new" title="User:Phayzfaustyn (page does not exist)">Phayzfaustyn</a> - <span class="int-own-work" lang="en">Own work</span>. Licensed under <a href="http://creativecommons.org/publicdomain/zero/1.0/deed.en" title="Creative Commons Zero, Public Domain Dedication">CC0</a> via <a href="https://commons.wikimedia.org/wiki/">Wikimedia Commons</a>.
