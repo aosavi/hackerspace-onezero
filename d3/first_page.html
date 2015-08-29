@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home page</title>
+
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+    <!-- Personal stylesheet -->
+    <link href="visualization_style_sheet.css" rel="stylesheet">
+
+    <!-- Jquery and bootstrap.js --> 
+    <script src="bootstrap.min.js"></script>
+
+    <!-- Importing d3 -->
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+
+
+</head>
+<body>
+<!--Making the navigation bar  -->
+<div class="navbar navbar-default navbar-fixed-top" id="main_navbar">
+    <div class="container">
+        <!-- Making the hader part with the title -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="" class="navbar-brand">Premier League data visualization</a>
+        </div>
+
+        <!-- Making the part of the navbar that will collapse-->
+        <div id="navbar-collapse" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="#topContainer">Home</a>
+                <li><a href="#rankings">Premier League Rankings</a>
+                <li><a href="#spread">Spread of Teams</a>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Making the top container. This contains the landing image -->
+<div class="container contentContainer" id ="topContainer">
+
+    <!-- Making a row with a rectangle the width of a 4 colmumn layout -->
+    <div class="row marginBottom">
+        <div class="col-md-4 col-md-offset-4 panel panel-default" id="topRow">
+            <h1 class="margin-base-vertical"> The English Premier League </h1>
+            <p >The current visualization will show how the development of the Premier League since its inception. </p>
+            <p> It shows the team ranking since 1992 as well as the Premier League top scorers.</p>
+            <p> Lastly it shows the spread of the Premier League teams across the UK, and the development of the number of forieng players in the league. </p>
+            <button type="button" class="btn btn-primary firstVis"><a href="#rankings">Premier League Rankings</a></button>
+            <button type="button" class="btn btn-primary"><a href="#spread">Spread of Teams</a></button>
+        </div>
+
+    </div>
+</div>
+
+<!-- Making a new row for the first two visualizations -->
+<div class="container marginTop" id="rankings">
+    <div class="row">
+        <div class="col-md-6 marginTop">
+            <h2><span class="glyphicon glyphicon-signal"></span> Rankings </h2>
+            <p class="text-muted text-justify">The visualization on the right shows an interactive bar chart of the premier league team rankings per year. Below the top scorers per year are displayed in a table. The use can pick a given year through the dropdown menu. Both the bar chart and the table will then be updated.</p>
+            <div id ="Table"> </div>
+        </div>
+        <div class="col-md-6 marginTop barChart">
+            <div class="dropdown barDropDown">
+            <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Seasons
+            <span class="caret"></span></button>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Making a new row for the second visualizaiton -->
+<div class="container marginTop" id="spread">
+ <div class="row">
+    <div class="col-md-6 ukMap" >
+            <h2><span class="glyphicon glyphicon-map-marker"></span> Spread of Teams </h2>
+            <p class="text-muted text-justify">The visualization on the distribution of premier league teams across the UK will be an interactive map starting from 1992 until 2014. The user can choose to display a particular year by means of a dropdown menu. The user can also click on certain teams. The average amount of foreign players for that team will then be displayed in the linegraph.</p>
+            <div>
+                <button id="mapPauzeButton" class="btn btn-danger btn-large mapButton"><span class="glyphicon glyphicon-pause"></span></button>
+            </div>
+            <div>
+                <button id="mapRestartButton" class="btn btn-warning btn-large mapButton"><span class="glyphicon glyphicon-fast-backward"></span></button>
+            </div>
+
+            <div>
+                <button id="mapContinueButton" class="btn btn-success btn-large lastButton"><span class="glyphicon glyphicon-play"></span></button>
+            </div>
+            
+            <div class="dropdown mapDropDown">
+                <button class="btn btn-default dropdown-toggle" type="button" id="menu2" data-toggle="dropdown">Seasons
+                    <span class="caret"></span></button>
+                    <ul class="dropdown-menu map-drop-down" role="menu" aria-labelledby="menu1">
+                    </ul>
+            </div>
+
+            <div id="textBox" class="hidden">
+                 <p><span id="boxHeader">Team information </span></p>
+                 <p class="info">Team: <span id="team"> </span> </p>
+                 <p class="info">Points: <span id="points"> </span></p>
+                 <p class="info">Stadium Capacity: <span id="capacity"> </span> </p>
+            </div>
+            <div id="marker"class="hidden"> </div>
+        </div>
+        <div class="col-md-6">
+            <h2><span class="glyphicon glyphicon-plane"></span> Foreign Players </h2>
+            <p class="text-muted text-justify">The linegraph below shows the average number of foreign players in the premier league per year. As one can see, the trend is increasing. The user can select additional teams by clicking on the teams on the map. The user can choose a maximum of 2 other teams. Note that if the number of foreign player in a team is 0, this means that the team wasn't participating in the premier league during the given year. </p>
+            <div id="foreignPlayers"> </div>
+        </div>
+        
+    </div>
+</div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    
+
+     <script>
+
+        $('#topContainer').css('height', 
+            $(window).height());
+
+    </script> 
+    <!-- Importing custom js files -->
+    <script src="simple_bar_chart.js"></script>
+
+  </body>
+</html>
