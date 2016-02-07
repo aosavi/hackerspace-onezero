@@ -16,6 +16,7 @@
         + Keeping private information from eavesdroppers / bulk collection programs
         + Storing your backups in the cloud
         + ...
+    - Trade-offs between ease of use and security
 * Security is all about trust
     - in yourself
     - in the people you work with
@@ -43,9 +44,8 @@ Install [Signal][8] (a WhatsApp alternative) on your iPhone or Android.
 
 ### Cryptography ###
 * It's everywhere
-    - web traffic: HTTPS
-    - wireless traffic: GSM, Bluetooth
-    - disk encryption: TrueCrypt
+    - web traffic: HTTPS, internet banking, e-mail
+    - wireless traffic: GSM, WiFi
     - ...
 * Here: focus on e-mail communication
     - Bob sends a message to Alice
@@ -250,9 +250,9 @@ Once we have someone's public key, we can encrypt a message to them. Go ahead an
 
 ```$ gpg2 --armor --encrypt example6.txt --recipient 0x1B3940341CE0C685```
 
-This will create a file example6.txt.asc which contains the ciphertext. Open it to see what it looks like. Now, you can e-mail this file to the recipient, put it on our GitHub repo, or transfer it to them in any other way.
+This will create a file example6.txt.asc which contains the ciphertext. Open it to see what it looks like. Now, you can e-mail this file to the recipient, put it on our GitHub repo, or transfer it to them in any other way. The recipient will be able to decrypt it, just like we did in example 5.
 
-### Key management ###
+### Key management (optional) ###
 *TODO*
 * Who to trust?
 * Central authority vs web of trust
@@ -276,7 +276,7 @@ This will create a file example6.txt.asc which contains the ciphertext. Open it 
 
 ##### Example 12 - Working with a smartcard or Yubikey #####
 
-##### Example 13 - Setting the default encryption key to use in the configuration #####
+##### Example 13 - Setting the default signing key to use in the configuration #####
 
 [1]: https://www.gnupg.org
 [2]: https://en.wikipedia.org/wiki/Pretty_Good_Privacy#OpenPGP
@@ -286,6 +286,7 @@ This will create a file example6.txt.asc which contains the ciphertext. Open it 
 [6]: https://en.wikipedia.org/wiki/Advanced_Encryption_Standard
 [7]: http://www.keepass.info
 [8]: https://whispersystems.org/
+[9]: https://toolbox.bof.nl
 
 ### Appendix ###
 
@@ -308,7 +309,8 @@ This will create a file example6.txt.asc which contains the ciphertext. Open it 
 
 #### Further reading ####
 ##### To start with #####
-* [Tutorial](https://emailselfdefense.fsf.org/en/index.html)
+* [Bits of Freedom Internet­vrijheid Toolbox][9]
+* [PGP Tutorial](https://emailselfdefense.fsf.org/en/index.html)
 * [Why use PGP?](http://www.phildev.net/pgp/gpgwhy.html)
 * [Reasons not to use PGP](http://secushare.org/PGP)
 
@@ -320,7 +322,6 @@ This will create a file example6.txt.asc which contains the ciphertext. Open it 
 * [KeePass][7]
 
 ##### Digital privacy #####
-* [Bits of Freedom](https://www.bof.nl/)
 * [Electronic Frontier Foundation](https://www.eff.org/)
 * [Free Software Foundation](https://www.fsf.org/)
 
