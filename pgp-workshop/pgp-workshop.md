@@ -8,7 +8,7 @@
     - Don't buy into [snake oil][3]
         + "military-grade encryption"
         + "mathematical proof" (Popper)
-    - Devil is in the details 
+    - Devil is in the details
 * Adapt to your needs/level of paranoia
     - Who is the attacker? What is the scenario?
         + Guarding state secrets from NSA
@@ -132,7 +132,7 @@ Note: in a real-life scenario it would probably make more sense to use a secure 
     - Easy to compute plaintext from ciphertext and private key
 * What are problems with this setup?
 * Example: [RSA][4] (1977)
-* Problems: 
+* Problems:
     - Encrypting the same plaintext twice gives the same ciphertext
     - Asymmetric encryption/decryption is much slower than symmetric
 
@@ -171,7 +171,7 @@ GnuPG needs to construct a user ID to identify your key.
 
 Real name: Bart Genuit
 Email address: bartgenuit@gmail.com
-Comment: 
+Comment:
 ```
 Note: It is considered good practice to leave the comment field blank.
 
