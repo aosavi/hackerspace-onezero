@@ -12,5 +12,6 @@ Let's list our public keys here with their fingerprints so we can easily verify 
 | David     | 0x80B5712A6FA7ACCD    | 0FC2 F843 CBEE 26F2 3382<br>  45D7 80B5 712A 6FA7 ACCD |
 | Emile     |                       |                                                        |
 | Luuk      |                       |                                                        |
+| Ravi      |                       |                                                        |
 | Sam       |                       |                                                        |
 
