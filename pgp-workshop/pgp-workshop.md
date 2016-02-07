@@ -36,8 +36,8 @@
 1. secure mobile messaging
 2. file encryption (and transfer)
 3. secure e-mail
-4. full disk encryption (optional)
-5. secure cloud backup (optional)
+4. full disk encryption (not covered)
+5. secure cloud backup (not covered)
 
 ### Preparation ###
 Install GnuPG, using the [instructions](#gnu-privacy-guard) below. Get the hardened configuration file from our GitHub repository. Find the standard configuration file (gpg.conf), rename it gpg_old.conf and place the new configuration file in place of the old one.
