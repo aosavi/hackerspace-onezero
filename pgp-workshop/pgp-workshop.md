@@ -59,6 +59,8 @@ Install [Signal][8] (a WhatsApp alternative) on your iPhone or Android.
         + Making signatures
         + Signature verification
 
+Note: in some cases, Alice and Bob are the same person. For example, when you encrypt a file containing your passwords to store on your harddisk, to decrypt yourself when you need them.
+
 ##### Example - send messages using Signal #####
 
 Open the app and fire away.
