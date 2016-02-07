@@ -34,8 +34,10 @@
 ### Use cases ###
 
 1. secure mobile messaging
-1. file encryption
-1. secure e-mail
+2. file encryption (and transfer)
+3. secure e-mail
+4. full disk encryption (optional)
+5. secure cloud backup (optional)
 
 ### Preparation ###
 Install GnuPG, using the [instructions](#gnu-privacy-guard) below. Get the hardened configuration file from our GitHub repository. Find the standard configuration file (gpg.conf), rename it gpg_old.conf and place the new configuration file in place of the old one.
@@ -47,8 +49,8 @@ Install [Signal][8] (a WhatsApp alternative) on your iPhone or Android.
     - web traffic: HTTPS, internet banking, e-mail
     - wireless traffic: GSM, WiFi
     - ...
-* Here: focus on e-mail communication
-    - Bob sends a message to Alice
+* Here: focus on secure communication (cases 1-3)
+    - Bob sends a message/file/e-mail to Alice
 * Main problems:
     - Confidentiality (making sure only Alice can read the message)
         + Encryption
