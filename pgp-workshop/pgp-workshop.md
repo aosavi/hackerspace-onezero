@@ -260,7 +260,7 @@ This will create a file example6.txt.asc which contains the ciphertext. Open it 
 * Central authority vs web of trust
 * Local 'web of trust'
 
-#### Key verification and key signing (certification) ####
+#### Key verification and key signing (aka certification) ####
 
 ##### Example 7 - Verifying and signing the PGP key of someone else #####
 
