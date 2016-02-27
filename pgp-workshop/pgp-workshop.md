@@ -214,6 +214,7 @@ And that's it, our public key is now sent to the keyserver and will be published
 
 ### The PGP Encryption system ###
 ![PGP Diagram](https://upload.wikimedia.org/wikipedia/commons/2/2a/Wat_is_PGP_%28Pretty_Good_Privacy%29%3F.png)
+
 Steps:
  1. Bob generates a random session key
  2. Bob encrypts the plaintext with the random session key (symmetric)
