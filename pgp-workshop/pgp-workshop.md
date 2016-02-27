@@ -290,6 +290,7 @@ This will create a file example6.txt.asc which contains the ciphertext. Open it 
 [7]: http://www.keepass.info
 [8]: https://whispersystems.org/
 [9]: https://toolbox.bof.nl
+[10]: https://www.openkeychain.org
 
 ### Appendix ###
 
@@ -309,6 +310,9 @@ This will create a file example6.txt.asc which contains the ciphertext. Open it 
 
 * Linux:
  * `apt-get install gnupg2`
+
+#### OpenKeychain (Android) ####
+[OpenKeychain][10] is an open source Android application for PGP key management.
 
 #### Further reading ####
 ##### To start with #####
