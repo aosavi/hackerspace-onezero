@@ -13,5 +13,4 @@ Let's list our public keys here with their fingerprints so we can easily verify 
 | Emile     |                       |                                                        |
 | Luuk      |                       |                                                        |
 | Ravi      |                       |                                                        |
-| Sam       |                       |                                                        |
-
+| Sam       | 0xCBF52AB89784F559    |                                                        |
