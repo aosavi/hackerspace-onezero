@@ -251,7 +251,7 @@ This is why later on we are going to verify and certify the key that we obtained
 ##### Example 8 - Encrypting a message #####
 Once we have someone's public key, we can encrypt a message to them. Go ahead and write a message, saving it as example6.txt. Next, we are going to encrypt that message to the public key we obtained:
 
-```$ gpg2 --armor --encrypt example6.txt --recipient 0x1B3940341CE0C685```
+```$ gpg2 --armor --recipient 0x1B3940341CE0C685 --encrypt example6.txt```
 
 This will create a file example6.txt.asc which contains the ciphertext. Open it to see what it looks like. Now, you can e-mail this file to the recipient, put it on our GitHub repo, or transfer it to them in any other way. The recipient will be able to decrypt it, just like we did in example 5.
 
