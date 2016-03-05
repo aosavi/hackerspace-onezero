@@ -59,7 +59,7 @@ Install [Signal][8] (a WhatsApp alternative) on your iPhone or Android.
 
 Note: in some cases, Alice and Bob are the same person. For example, when you encrypt a file containing your passwords to store on your harddisk, to decrypt yourself when you need them.
 
-##### Example - send messages using Signal #####
+##### Example 1 - send messages using Signal #####
 
 Open the app and fire away.
 
@@ -80,7 +80,7 @@ How was Enigma broken back in the days?
 * Modern example: [AES-256][6] (2001)
 * Problem: how to send the secret key?
 
-##### Example 1 - Symmetric encryption #####
+##### Example 2 - Symmetric encryption #####
 First, either download 'example1.txt' from the [repository](../pgp-workshop/example1.txt), or create your own example1.txt with some arbitrary message. This will be the plaintext message we want to encrypt. Now, while in the same directory as our plaintext message, we encrypt using symmetric encryption:
 
 ```$ gpg2 --armor --symmetric example1.txt```
@@ -108,7 +108,7 @@ Which should ask us for our passphrase and yield the original example1.txt. Note
 
 Note: if you are not asked for your passphrase, this is because GnuPG caches your passphrases (by default 10 min) so you don't have to enter them every time.
 
-##### Example - secure file transfer using GnuPG and Signal #####
+##### Example 3 - secure file transfer using GnuPG and Signal #####
 Now that we know how to encrypt files symmetrically with GnuPG, we can combine this with Signal to transfer files securely. For example, we have a big file that we want to transfer securely over the internet between two laptops, and we only have Signal as a secure messaging channel.
 
 First, encrypt whatever file you want to send using GnuPG:
@@ -138,7 +138,7 @@ Note: in a real-life scenario it would probably make more sense to use a secure 
     - Encrypting the same plaintext twice gives the same ciphertext
     - Asymmetric encryption/decryption is much slower than symmetric
 
-##### Example 2 - Creating a PGP keyset #####
+##### Example 4 - Creating a PGP keyset #####
 First off, you need a strong passphrase, which will be used to encrypt your PGP keyset while 'at rest' on your harddisk. You could use a [password manager][7] to help you generate and/or store one, scribble random characters on a slip of paper or use a long phrase that is easy to remember but hard to guess. Don't worry, you can change the passphrase later. Now, we can generate our keyset.
 
 ```$ gpg2 --gen-key```
@@ -186,7 +186,7 @@ Change (N)ame, (C)omment, (E)mail or (O)kay/(Q)uit? O
 ```
 A key pair should now be generated (this might take a few minutes), consisting by default of one SC (signing and certification) main key and one E (encryption) subkey.
 
-##### Example 3 - Exporting your public key #####
+##### Example 5 - Exporting your public key #####
 We basically have two options to export our public key:
 
 1. To a file
@@ -228,10 +228,10 @@ Steps:
 
 ### Sending and receiving encrypted messages ###
 
-##### Example 4 - Decrypting a message #####
+##### Example 6 - Decrypting a message #####
 I will leave a personal message for each of you in the GitHub repo, encrypted to the public key that I got from the keyserver. Get it and decrypt it.
 
-##### Example 5 - Importing public keys #####
+##### Example 7 Importing public keys #####
 Same two options:
 
 1. From a file
@@ -248,7 +248,7 @@ If we cannot find the right key in this way, we might ask the person for their k
 **Note that we can't be sure yet that we have the right key and it was not meddled with in the transfer from Alice to Bob!**
 This is why later on we are going to verify and certify the key that we obtained, and for now we don't send any sensitive information yet.
 
-##### Example 6 - Encrypting a message #####
+##### Example 8 - Encrypting a message #####
 Once we have someone's public key, we can encrypt a message to them. Go ahead and write a message, saving it as example6.txt. Next, we are going to encrypt that message to the public key we obtained:
 
 ```$ gpg2 --armor --encrypt example6.txt --recipient 0x1B3940341CE0C685```
@@ -263,21 +263,21 @@ This will create a file example6.txt.asc which contains the ciphertext. Open it 
 
 #### Key verification and key signing (aka certification) ####
 
-##### Example 7 - Verifying and signing the PGP key of someone else #####
+##### Example 9 - Verifying and signing the PGP key of someone else #####
 
-##### Example 8 - Verifying, signing and exchanging each other's keys #####
+##### Example 10 - Verifying, signing and exchanging each other's keys #####
 
 ### Message integrity (optional) ###
 
-##### Example 9 - Encrypting and signing a message #####
+##### Example 11 - Encrypting and signing a message #####
 
-##### Example 10 - Decrypting and verifying a message #####
+##### Example 12 - Decrypting and verifying a message #####
 
 ### Extras (optional) ###
 
-##### Example 11 - Generating a revocation certificate #####
+##### Example 13 - Generating a revocation certificate #####
 
-##### Example 12 - Working with a smartcard or Yubikey #####
+##### Example 14 - Working with a smartcard or Yubikey #####
 
 [1]: https://www.gnupg.org
 [2]: https://en.wikipedia.org/wiki/Pretty_Good_Privacy#OpenPGP
