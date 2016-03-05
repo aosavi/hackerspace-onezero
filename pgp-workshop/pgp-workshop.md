@@ -327,6 +327,7 @@ This will create a file example6.txt.asc which contains the ciphertext. Open it 
 * [Coursera course Cryptography I](https://www.coursera.org/course/crypto)
 * [Yubikey](https://www.yubico.com/products/yubikey-hardware/)
 * [KeePass][7]
+* [Keybase.io](https://keybase.io/)
 
 ##### Digital privacy #####
 * [Electronic Frontier Foundation](https://www.eff.org/)
